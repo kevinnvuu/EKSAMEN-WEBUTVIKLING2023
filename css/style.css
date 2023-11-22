@@ -1,3 +1,384 @@
+/* Setter standard skrifttype for hele nettstedet */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1600px;
+}
+
+/* Definerer et grid-container som inneholder header, main og footer */
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+/* Legger til litt padding  for mellomrom */
+header, main, footer {
+    padding: 0;
+}
+
+
+/* Styler header-seksjonen */
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    grid-area: header;
+}
+
+#logo img {
+    width: 120px; /* Endre verdien etter behov */
+    height: auto; /* Sørg for at høyden justeres proporsjonalt */
+}
+
+/* Gjør navigasjonselementene i header til flexbokser som er justert mellomrom og til høyre */
+header nav {
+    display: flex;
+    flex-direction: column; /* Endrer retningen til kolonne når skjermen blir smalere */
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.navbar {
+    list-style: none; /* Fjerner punktlistestilen */
+    padding: 0; /* Fjerner standard padding på listen */
+    
+}
+
+/* Øker mellomrommet mellom navigasjonselementene */
+.navbar li {
+    margin-bottom: 1rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styler bannerseksjonen */
+.banner {
+    position: relative;
+}
+
+/* .banner h1 {
+    font-size: 30px;
+    margin-bottom: 1px;
+    align-items: center;
+
+} */
+
+.contact-btn {
+    text-decoration: none;
+    background-color: #e6bd43;
+    font-weight: bold;
+    color: black;
+    padding: 0.5rem;
+
+}
+
+.contact-btn:hover, .banner-btn:hover, #newsletter .sign-btn:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+
+
+#banner-index, #banner-products, #banner-about {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    height: 400px;
+    object-fit: cover;
+}
+
+#banner-index .overlay-index, #banner-products .overlay-products {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 30px;
+    text-align: center;
+}
+
+#myVideo {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover; 
+    
+}
+
+#banner-index h1 {
+    font-size: 50px;
+
+}
+
+#banner-index p {
+    font-weight: lighter;
+    font-size: 15px;
+
+}
+  
+.banner-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #e6bd43;
+    color: #000;
+}
+
+
+
+
+
+/* Styler read more about us knapp */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_outline_buttons */
+.read-more-btn {
+    border: 2px solid #000;
+    background-color:#e6bd43;
+    color:#000;
+    padding: 15px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border-color: #000;
+    font-weight: bold;
+  }
+
+/* når man hovrer over knappen */
+.read-more-btn:hover, .explore-btn:hover{
+    background-color: #000;
+    color:#e6bd43;
+    font-weight: bold;
+  }
+  
+
+#engaging{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+/* Styler main-seksjonen i gridet */
+main {
+    grid-area: main;
+}
+
+/* Setter bredden til bilder inni main-seksjonen til 100% */
+main section img {
+    width: 100%;
+}
+
+
+
+/* Styler tjeneste-seksjonen med flexbokser og bakgrunnsfarge */
+#services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    min-height: 300px; 
+    align-items: center;
+    text-align: center;
+
+}
+
+
+#services h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+#services article {
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+/* Juster font-awesome-ikonstørrelsen ved behov */
+.fa-solid {
+    font-size: 2em;
+}
+
+
+/* Gjør flex-seksjoner som viser bilder og tekst ved siden av hverandre med mellomrom */
+.flex-section {
+    display: flex;
+    flex-direction: column; /* Endre til kolonne på mindre skjermer */
+    background-color: #e6bd43;
+    padding: 3rem;
+    align-items: center;
+}
+
+/* Reduserer bildenes bredde til 100% i flex-seksjoner for mobilvisning */
+.flex-section img {
+    height: auto; /* Beholder bildets høyde proporsjonal med bredden */
+    max-width: 400px; /* Setter en maksimal bredde for bildet */
+}
+
+.flex-section section {
+    padding: 1rem;
+    width: 100%; /* Fyller forelderens bredde for mobilvisning */
+    margin-top: 1rem; /* Gir litt mellomrom over teksten */
+}
+
+.flex-section section p {
+    margin-bottom: 40px; 
+}
+
+/* sekjson for sign me up knapp */
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    background-color: #d7d7d7bd;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+#newsletter h2{
+    align-self: center;
+    font-size: 30px;
+
+}
+
+#newsletter article{
+    align-self: center;
+}
+
+#newsletter article input{
+    padding: 10px;
+    border: none;
+
+}
+
+#newsletter .sign-btn {
+    background-color: #e6bd43;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Footer-styling */
+footer {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    grid-area: footer;
+
+
+}
+
+/* Stil for footer seksjon */
+footer section {
+    display: flex;
+    flex-direction: column; /* Default: Kolonne på mindre skjermer */
+    align-items: center; /* Sentrerer elementene horisontalt på mindre skjermer */
+    justify-content: center; /* Sentrerer elementene vertikalt på mindre skjermer */
+}
+
+/* Stil for sosiale medie-ikoner */
+.social-media-icons {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    /* padding-right: 30px; */
+}
+
+.social-media-icons i {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+/* PRODUCS/ PORTFOLIO SIDE */
+
+/* styler banner på produkt siden og about siden */
+#banner-products  img, #banner-about  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* styler skriften på banner på produtksiden */
+#banner-products h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    margin: 0;  
+    transform: translate(-50%, -50%);
+}
+
+main h2 {
+    margin-left: 20px;
+    
+}
+  
+#explore  {
+    padding: 1rem;
+}
+
+
+.branding, .design, .development {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.branding article, .design article, .development article {
+    max-width: 692px;
+    flex-grow: 1;
+    margin: 1rem;
+}
+
+.branding article img, .design article img, .development article img  {
+    width: 100%;
+}
+
+.branding article h3, .design article h3, .development article h3{
+    margin-left: 2px;
+    font-weight: 700;
+}
+
+
+/* @media only screen and (min-width: 768px) {
+    .branding, .design, .development {
+        justify-content: initial;
+        text-align: left;
+    }
+}
+*/
+
+
+/* Stil for knappene på portfolio side */
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px; /* Juster padding etter behov */
+    text-decoration: none;
+    color: black; /* Farge på teksten */
+    border: 2px solid black; /* Svart kantlinje */
+    background-color: white; /* Hvit bakgrunn */
+    margin: 5px; /* Legg til litt mellomrom til høyre for knappen */
+
+}
 
 
 
@@ -5,42 +386,214 @@
 
 
 
+/* ABOUT US SIDE */
+
+#banner-about .overlay-about {
+    position: absolute;
+    width: 47%;
+    height: 80%;
+    top: 10%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.748);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.overlay-about h1 {
+    font-size: 15px; /* Endre størrelsen etter behov */
+    align-self: flex-start; /* Plasser til venstre */
+    margin-left: 1rem; /* Legg til venstremargen her */
+    margin-bottom: 0;
+
+
+}
+
+
+.overlay-about p, .overlay-about h2 {
+    font-size: 15px; /* Endre størrelsen etter behov */
+    font-weight: lighter;
+    align-self: flex-start; /* Plasser til venstre */
+    margin-left: 1rem; /* Legg til venstremargen her */
+    margin-bottom: 0;
 
 
 
+}
+
+/* style */
+.overlay-about a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #e6bd43;
+    color: #000000;
+    font-size: 15px; /* Endre størrelsen etter behov */
+    align-self: flex-start; /* Plasser til venstre */
+    margin-left: 1rem; /* Legg til venstremargen her */
+    margin-top: 3rem;
 
 
 
+}
 
 
 
+#clients {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #e6bd43;
+    justify-content: center; /* Sentrer elementene horisontalt */
+    align-items: center; /* Sentrer elementene vertikalt */
+    padding: 30px; /* Legg til ekstra padding for å utvide bakgrunnen */
+
+}
+
+#clients h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+#clients article {
+    max-width: 100px;
+    width: 80%;
+    min-width: 100px;
+    margin: 30px;
+    text-align: center; /* Sentrer teksten innenfor article-elementet */
+}
+
+#clients article img {
+    width: 130%; /* Gjør bildene mindre, juster etter behov */
+    height: auto;
+}
+
+/* Juster font-awesome-ikonstørrelsen ved behov */
+.fa-solid {
+    font-size: 2em;
+}
+
+
+#contact-us {
+    background-color: #efefef;
+    padding: 50px;
+}
+
+.container {
+    
+}
+
+
+label {
+    padding: 10px 0;
+    display: block;
+}
+
+input[type="text"],
+input[type="subject"],
+textarea {
+    width: 40%;
+    padding: 8px; /* Reduser padding for mindre høyde */
+    display: inline-block;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #e6bd43;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #000;
+    font-weight: bold;
+    color: #e6bd43;
+}
 
 
 
+/* Mediestørrelsesregel for skjermer som er bredere enn 600px */
+@media only screen and (min-width: 600px) {
+    /* Endrer grid-malen for bredere skjermer */
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+      /* Gjenoppretter den opprinnelige flex-retningen for større skjermer */
+      header nav {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    /* Viser den skjulte navigasjonsmenyen og skjuler menyikoner */
+    .navbar {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+
+    }
+    
+    .flex-section {
+        flex-direction: row; /* Endre tilbake til rad for større skjermer */
+    }
+
+    .flex-section section {
+        width: 40%; /* Juster bredden etter behov */
+        margin-top: 0; /* Fjerner toppmargen for større skjermer */
+    }
+
+    /* Tilpasser også footer section for større skjermer */
+    footer section {
+        flex-direction: row;
+        justify-content: space-between; /* Legg til for å beholde plassering på større skjermer */
+        align-items: center; /* Sentrerer vertikalt */
+    }
+
+    /* Justerer plasseringen av sosiale medie-ikoner på større skjermer */
+    .social-media-icons {
+        align-items: center;
+        justify-content: center; /* Sentrerer ikonene horisontalt på mindre skjermer */
+        padding: 0; /* Fjerner all padding på mindre skjermer */
+    }
+
+    .branding, .design, .development {
+        justify-content: initial;
+        text-align: left;
+    }
 
 
-
-
-
-
-
-
-
-
+}
 
 
 
 
 
 .google-map {
-    padding-bottom: 50%;
-    position: relative;
+    width: 100%; /* Juster bredden etter behov */
+    height: 250px; /* Juster høyden etter behov */
 }
 
 .google-map iframe {
-    height: 50%;
     width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
+    height: 100%;
 }
+
+
+.skip {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #252525;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+

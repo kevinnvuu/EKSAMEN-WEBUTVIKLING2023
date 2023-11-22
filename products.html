@@ -14,9 +14,10 @@
     <title>INDEX</title>
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <!-- https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
+    <a href="#top" class="skip" id="skipToTop">
         <i class="fas fa-arrow-up"></i>
-     </button>
+    </a>
     <!-- Hovedbeholderen for nettstedet -->
     <div id="grid-container">
         <header>
@@ -27,43 +28,29 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact-us">Contact</a></li>
+                    <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
 
                 </ul>
-            </nav>
-            
-            <section class="banner2">
+            </nav>           
+            <section id="banner-products">
+                <img src="img/banner.jpeg" alt="">
+                <div class="overlay-products"></div>
                 <h1>Portfolio</h1>
             </section>
         </header>
-        <main>
+        <main id="main">
+            <h2>Explore previous jobs</h2>
             <section id="explore">
-                <h2>Explore previous jobs</h2>
-                <a href="products.html#branding" class="black-btn">Branding</a>
-                <a href="products.html#design" class="black-btn">Design</a>
-                <a href="products.html#development" class="black-btn">Development</a>
+                <a href="products.html#branding" class="explore-btn">Branding</a>
+                <a href="products.html#design" class="explore-btn">Design</a>
+                <a href="products.html#development" class="explore-btn">Development</a>
             </section>
-            <section id="branding" class="Branding">
-                <h2>Branding</h2>
+            <h2>Branding</h2>
+            <section class="branding">
                 <article>
                     <img src="https://placehold.co/400x400" alt="Product 1">
                     <h3>Quisque ultrices libero sit</h3>
                 </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-            </section>
-            <section id="design" class="design">
-                <h2>Design</h2>
                 <article>
                     <img src="https://placehold.co/400x400" alt="Product 1">
                     <h3>Quisque ultrices libero sit</h3>
@@ -77,8 +64,24 @@
                     <h3>Quisque ultrices libero sit</h3>
                 </article>
             </section>
-            <section id="development" class="development">
-                <h2>Development</h2>
+            <h2>Design</h2>
+            <section class="design">
+                <!-- <h2>Design</h2> -->
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Product 1">
+                    <h3>Quisque ultrices libero sit</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Product 1">
+                    <h3>Quisque ultrices libero sit</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400" alt="Product 1">
+                    <h3>Quisque ultrices libero sit</h3>
+                </article>
+            </section>
+            <h2>Development</h2>
+            <section class="development">
                 <article>
                     <img src="https://placehold.co/400x400" alt="Product 1">
                     <h3>Quisque ultrices libero sit</h3>
@@ -92,11 +95,10 @@
 
         </main>
         <footer>
+         
             <section>
-            <p>Company copyright 2023</p>
-            </section>
-            <section>
-                <p>Company copyright 2023</p>
+                <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo"></a>
+               <p>Companyrights companyname 2023</p>
                 <ul class="social-media-icons">
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>

@@ -14,9 +14,10 @@
     <title>INDEX</title>
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <!-- https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
+      <a href="#top" class="skip" id="skipToTop">
         <i class="fas fa-arrow-up"></i>
-     </button>
+    </a>
      <!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
      <!-- Hovedbeholderen for nettstedet -->
     <div id="grid-container">
@@ -28,29 +29,38 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact-us">Contact</a></li>
-
+                    <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
                 </ul>
             </nav>
             
-            <section class="banner">
-                <h1>Compeling headline</h1>
-                <!-- Knapp for å lese mer (for eksempel om bolleoppskrifter) -->
-                <a href="index.html#services" class="black-btn">Read more about our services</a>
+            <section id="banner-index">
+                <div class="video-container">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="img/mountains.mp4" type="video/mp4">
+                    </video>
+                    <div class="overlay-index">
+                        <h1>Compeling headline</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum justo ante, pretium at mi nec, viverra pellentesque magna.<br> Vestibulum daPhasellus vestibulum nibh in leo fermentum rutrum.</p>
+                        <!-- Knapp for å lese mer -->
+                        <a href="index.html#services" class="banner-btn">Read more about our services</a>
+                    </div>
+                </div>
             </section>
+            
         </header>
         <main>
-            <section>
-                <h2>Enganging subheading. What can you help your visitors with</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-            </section>
+            <section id="engaging">
+                <h2>Engaging subheading. What can <br> you help your visitors with</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed Nulla sagittis porta tincidunt.<br> Maecenas sed convallis mi, at consequat sapien do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua</p>
+            </section> 
+            
             <!-- Seksjon med en overskrift og en beskrivelse -->
             <section class="flex-section">
                 <img src="https://placehold.co/400x400" alt="Grå placeholder bilde">
                 <section>
                     <h3>About Our Company</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                    <a href="about.html" class="black-btn">Read more about us</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris Cras tristique feugiat hendrerit. Proin cursus neque ac faucibus facilisis. Curabitur venenatis in quam nec molestie. Nullam semper nulla at diam aliquam mollis. </p>
+                    <a href="about.html" class="read-more-btn">Read more about us</a>
                 </section>    
             </section>
             <section id="services">
@@ -66,6 +76,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                 </article>
                 <article>
+                    <i class="fa-solid fa-code fa-xl"></i>
                     <h3>Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                 </article>
@@ -74,22 +85,21 @@
                     <h3>Support</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                 </article>
+            </section>
             <section id="newsletter">
-                <form>
-                    <label for="fname">Sign up for our newsletter</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <input type="submit" value="Sign me up">
-                  </form>
-
+                <h2>Sign up for our newsletter</h2>
+                <article>
+                    <label for="sign-up"></label>
+                    <input type="email" placeholder="Nora@epost.no" id="newsletter-email">
+                    <input type="submit" value="Sign me up!" class="sign-btn">
+                </article>
             </section>
         </main>
         <footer>
+         
             <section>
                 <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo"></a>
-                <p>Company copyright 2023</p>
-            </section>
-            <section>
-                <p>Company copyright 2023</p>
+               <p>Companyrights companyname 2023</p>
                 <ul class="social-media-icons">
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
