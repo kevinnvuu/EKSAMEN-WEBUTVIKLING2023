@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <!-- Inkluderer ikon-stiler for ikoner fra FontAwesome -->
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <!-- Inkluderer nettstedets egen stilark -->
@@ -27,7 +28,7 @@
                     <!-- Navigasjonsmeny med lenker -->
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
                     <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
                 </ul>
             </nav>
@@ -36,7 +37,7 @@
                 <div class="overlay-about">
                     <p>Company name</p>
                     <h1>About our company</h1>
-                    <h2>Int sel seger in felis quis dui hendrerit blandit. Nulla sjokolsefacilisi. Praui at ndo. Mauris li in blandt sulescipit. Praesent nisi eros, egestas sit amet quam sit amet, suscipit ultrices magna. Duis aliquet blandit auctor. Duis sem mauris, porta ut viverra ut, imperdiet eget sjdjso oskds kedsodjosjj okej sik loks seje kel soi la inti lod scelerisque elit elementum, fermentum purus nec, maximus nibh. Integer nec fermentum odio. Phasellus egestas, ipsum quis elementum euismod, ipsum velit suscipit sem, ac euismod libero dui id enim. Curabiturlibero, pretium et diam mollis dj,Integer rhoncus ac justo sit. </h2>
+                    <h2>Int sel seger in felis quis dui hendrerit blandit. Praui at ndo. Mauris li in blandt sulescipit. Praesent nisi eros.<br> Duis sem mauris, porta ut viverra ut, imperdiet eget sjdjso oskds kedsodjosjj okej sik loks seje kel soi la inti lod scelerisque elit elementum, fermentum purus nec, maximus nibh. Integer nec fermentum odio. Phasellus egestas, ipsum quis elementum euismod, ipsum velit suscipit sem, ac euismod libero dui id enim. Curabiturlibero, pretium et diam mollis dj,Integer rhoncus ac justo sit. </h2>
                     <a href="about.html#contact-us" class="touch-btn">Get in touch with us</a>
                 </div>
             </section>     
@@ -77,38 +78,41 @@
                     <img src="img/logo3.png" alt="Product 1">
                 </article>
             </section>
-            <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form -->
             <section id="contact-us">
                 <h2>Contact us</h2>
-                    <div class="container">
-                        <form action="action_page.php" style="border:1px solid #ccc">
-                      <h3>Send us a message</h3>
-                      <hr>
-                  
-                      <label for="name">Name</label>
-                      <input type="text" id="name" name="name" placeholder="Your name..">
-                  
-                      <label for="subject"><b>Subject</b></label>
-                      <input type="subject" placeholder="Branding.." name="sub" required>
-                  
+                <div class="contact-container">
+                    <form action="#" method="get" id="form">
+                        <h3>Send us a message</h3>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Ola Normann.." required>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Branding.." required>
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Submit">
-                      </div>
-                    </div>
-                  </form>
-            </section>
-            <section id="contact-information">
-                <h3>Contact information</h3>
-                <p></p>
-                <i class="fa-solid fa-location-pin"></i>
-                <p>B R A Veien 4, 1757 Halden</p>
-                <i class="fa-solid fa-phone"></i>
-                <p>69 60 80 00</p>
-                <i class="fa-solid fa-envelope"></i>
-                <p>postmottak@hiof.no</p>
-            </section>
+                        <textarea id="message" rows="5" name="message" required></textarea>
+                        <button type="submit">Send message</button>
+                    </form>
+                    <section id="contact-information">
+                        <h3>Contact information</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit ipsum, imperdiet nec gravida vel, suscipit nec nulla. Morbi consequat et eros vel tincidunt. </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>B R A Veien 4, 1757 Halden</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>69 60 80 00</span>
+                            </li>
+                            <li>
+                                <a href="mailto:postmottak@hiof.no">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>postmottak@hiof.no</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>            
             <div class="google-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4094.4217152048864!2d11.346814956534397!3d59.12887242705039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6d9419ecb%3A0x109c7e7c9cd6160!2sRemmen%20H%C3%B8gskolen!5e0!3m2!1sno!2sno!4v1700149752477!5m2!1sno!2sno"></iframe>
                 <!-- https://blog.hubspot.com/website/how-to-embed-google-map-in-html -->
@@ -117,7 +121,7 @@
         <footer>
          
             <section>
-                <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo"></a>
+                <a href="index.html" id="logoo"><img src="img/logo1.png" alt="Logo"></a>
                <p>Companyrights companyname 2023</p>
                 <ul class="social-media-icons">
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
