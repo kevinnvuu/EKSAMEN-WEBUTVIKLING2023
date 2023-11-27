@@ -1,113 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Inkluderer en stilark for normalisering for å sikre at nettstedet ser likt ut på alle nettlesere -->
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-    <!-- Inkluderer ikon-stiler for ikoner fra FontAwesome -->
-    <link href="css/font/css/fontawesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap">
-    <link href="css/font/css/brands.css" rel="stylesheet">
-    <link href="css/font/css/solid.css" rel="stylesheet">
-    <!-- Inkluderer nettstedets egen stilark -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>INDEX</title>
-</head>
-<body>
-    <!-- https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
-    <a href="#top" class="skip" id="skipToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    <!-- Hovedbeholderen for nettstedet -->
-    <div id="grid-container">
-        <header>
-            <nav>
-                <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo"></a>
-                <ul class="navbar">
-                    <!-- Navigasjonsmeny med lenker -->
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="products.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
-
-                </ul>
-            </nav>           
-            <section id="banner-products">
-                <img src="img/banner.jpeg" alt="">
-                <div class="overlay-products"></div>
-                <h1>Portfolio</h1>
-            </section>
-        </header>
-        <main id="main">
-            <section id="explore">
-                <h2>Explore previous jobs</h2>
-                <hr>
-                <a href="products.html#branding" class="explore-btn">Branding</a>
-                <a href="products.html#design" class="explore-btn">Design</a>
-                <a href="products.html#development" class="explore-btn">Development</a>
-            </section>
-            <section class="branding">
-                <h2>Branding</h2>
-                <hr>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-            </section>
-            <section class="design">
-                <h2>Design</h2>
-                <hr>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-            </section>
-            <section class="development">
-                <h2>Development</h2>
-                <hr>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400x400" alt="Product 1">
-                    <h3>Quisque ultrices libero sit</h3>
-                </article>
-            </section>
-        </main>
-        <footer>
-         
-            <section>
-                <a href="index.html" id="logoo"><img src="img/logo1.png" alt="Logoo"></a>
-               <p>Companyrights companyname 2023</p>
-                <ul class="social-media-icons">
-                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-            </section>
-        </footer>
-    </div>
-</body>
+    <head>
+        <!-- Meta tags  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Utforsk vår portefølje av prosjekter innenfor design, branding, utvikling, og support.">
+        <meta name="keywords" content="design, development, branding, support, portfolio, ">      
+        <meta property="og:title" content="Vår portfolio">
+        <meta property="og:description" content="Utforsk vår portefølje av prosjekter innennfor design, branding, utvikling, og support.">
+        <meta property="og:image" content="img/banner.jpeg"> 
+        <!-- Stilark for normalisering, for å sikre at nettstedet ser likt ut på alle nettlesere -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <!-- Inkluderer ikon stiler for ikoner fra FontAwesome -->
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <!-- Inkluderer nettstedets egen stilark -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img/logo1.png">
+        <title>Our portfolio, design, branding, development, and support</title>
+    </head>
+    <body>
+        <!-- Skip to Top top knapp -->
+        <!-- Kilde skip to top knapp: https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
+        <a href="#top" class="skip" id="skipToTop" aria-label="Gå til toppen">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <div id="grid-container">
+            <header>
+                <!-- Navigasjons header-->
+                <nav>
+                    <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo"></a>
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="index.html" title="Home" aria-current="page">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
+                    </ul>
+                </nav>           
+                 <!-- Banner bilde -->
+                <section id="banner-products">
+                    <img src="img/banner.jpeg" alt="banner bilde">
+                    <div class="overlay-products"></div>
+                    <h1>Portfolio</h1>
+                </section>
+            </header>
+            <main id="main">
+                <section id="explore">
+                    <h2>Explore previous jobs</h2>
+                    <hr>
+                    <!-- Knapper for branding, design og development -->
+                    <a href="#branding" class="explore-btn">Branding</a>
+                    <a href="#design" class="explore-btn">Design</a>
+                    <a href="#development" class="explore-btn">Development</a>
+                </section>
+                <!-- Seksjon med artikkelkort og placeholder-->
+                <section id="branding" class="branding">
+                    <h2>Branding</h2>
+                    <!-- Strek-->
+                    <hr>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 1">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 2">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 3">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 4">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                </section>
+                <section id="design" class="design">
+                    <h2>Design</h2>
+                    <hr>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 5">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 6">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 7">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                </section>
+                <section id="development" class="development">
+                    <h2>Development</h2>
+                    <hr>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 8">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                    <article>
+                        <img src="https://placehold.co/400x400" alt="Grå placeholder 9">
+                        <h3>Quisque ultrices libero sit</h3>
+                    </article>
+                </section>
+            </main>
+            <footer>           
+                <section>
+                    <!-- Footer logo -->
+                    <a href="index.html" id="logoo" title="logo"><img src="img/logo1.png" alt="Logoo"></a>
+                   <p>Companyrights Companyname 2023</p>
+                    <!-- Likning til sosaile medier, med ikoner-->
+                    <ul class="social-media-icons">
+                        <li><a href="https://www.facebook.com/" aria-label="Følg oss på Facebook" ><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/" aria-label="Følg oss på Instgram" ><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" aria-label="Følg oss på LinkedIn" ><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    </body>
 </html>

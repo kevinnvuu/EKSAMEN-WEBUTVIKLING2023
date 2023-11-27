@@ -1,136 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Inkluderer en stilark for normalisering for å sikre at nettstedet ser likt ut på alle nettlesere -->
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-    <!-- Inkluderer ikon-stiler for ikoner fra FontAwesome -->
-    <link href="css/font/css/fontawesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap">
-    <link href="css/font/css/brands.css" rel="stylesheet">
-    <link href="css/font/css/solid.css" rel="stylesheet">
-    <!-- Inkluderer nettstedets egen stilark -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>INDEX</title>
-</head>
-<body>
-    <!-- https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
-    <a href="#top" class="skip" id="skipToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    <!-- Hovedbeholderen for nettstedet -->
-    <div id="grid-container">
-        <header>
-            <nav>
-                <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo"></a>
-                <ul class="navbar">
-                    <!-- Navigasjonsmeny med lenker -->
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
-                    <li><a class="active" href="about.html">About</a></li>
-                    <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
-                </ul>
-            </nav>
-            <section id="banner-about">
-                <img src="img/banner.jpeg" alt="">
-                <div class="overlay-about">
-                    <p>Company name</p>
-                    <h1>About our company</h1>
-                    <h2>Int sel seger in felis quis dui hendrerit blandit. Praui at ndo. Mauris li in blandt sulescipit. Praesent nisi eros.<br> Duis sem mauris, porta ut viverra ut, imperdiet eget sjdjso oskds kedsodjosjj okej sik loks seje kel soi la inti lod scelerisque elit elementum, fermentum purus nec, maximus nibh. Integer nec fermentum odio. Phasellus egestas, ipsum quis elementum euismod, ipsum velit suscipit sem, ac euismod libero dui id enim. Curabiturlibero, pretium et diam mollis dj,Integer rhoncus ac justo sit. </h2>
-                    <a href="about.html#contact-us" class="touch-btn">Get in touch with us</a>
-                </div>
-            </section>     
-        </header>
-        <main>
-            <section id="services">
-                <h2>Our services</h2>
-                <article>
-                    <i class="fa-solid fa-users"></i>
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                </article>
-                <article>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h3>Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                </article>
-                <article>
-                    <i class="fa-solid fa-code fa-xl"></i>
-                    <h3>Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                </article>
-                <article>
-                    <i class="fa-solid fa-wifi"></i>
-                    <h3>Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                </article>
-            </section>
-            <section id="clients">
-                <h2>Some of our clients</h2>
-                <article>
-                    <img src="img/logo1.png" alt="Product 1">
-                </article>
-                <article>
-                    <img src="img/logo2.png" alt="Product 1">
-                </article>
-                <article>
-                    <img src="img/logo3.png" alt="Product 1">
-                </article>
-            </section>
-            <section id="contact-us">
-                <h2>Contact us</h2>
-                <div class="contact-container">
-                    <form action="#" method="get" id="form">
-                        <h3>Send us a message</h3>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Ola Normann.." required>
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Branding.." required>
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" name="message" required></textarea>
-                        <button type="submit">Send message</button>
-                    </form>
-                    <section id="contact-information">
-                        <h3>Contact information</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit ipsum, imperdiet nec gravida vel, suscipit nec nulla. Morbi consequat et eros vel tincidunt. </p>
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span>B R A Veien 4, 1757 Halden</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-phone"></i>
-                                <span>69 60 80 00</span>
-                            </li>
-                            <li>
-                                <a href="mailto:postmottak@hiof.no">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <span>postmottak@hiof.no</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-            </section>            
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4094.4217152048864!2d11.346814956534397!3d59.12887242705039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6d9419ecb%3A0x109c7e7c9cd6160!2sRemmen%20H%C3%B8gskolen!5e0!3m2!1sno!2sno!4v1700149752477!5m2!1sno!2sno"></iframe>
-                <!-- https://blog.hubspot.com/website/how-to-embed-google-map-in-html -->
-           </div>
-        </main>
-        <footer>
-         
-            <section>
-                <a href="index.html" id="logoo"><img src="img/logo1.png" alt="Logo"></a>
-               <p>Companyrights companyname 2023</p>
-                <ul class="social-media-icons">
-                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-            </section>
-        </footer>
-    </div>
-</body>
-</html>
-
+    <head>
+        <!-- Meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lær mer om vår bedrift og våre verdier.">
+        <meta name="keywords" content="design, development, branding, support, about-us, ">
+        <meta property="og:title" content="Lær om oss">
+        <meta property="og:description" content="Lær mer om vår bedrift og våre verdier.">
+        <meta property="og:image" content="img/banner.jpeg"> 
+        <!-- Stilark for normalisering, for å sikre at nettstedet ser likt ut på alle nettlesere -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <!-- Inkluderer ikon stiler for ikoner fra FontAwesome -->
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <!-- Inkluderer nettstedets egen stilark -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img/logo1.png">
+        <title>Learn about our company</title>
+    </head>
+    <body>
+        <!-- Skip to Top top knapp -->
+        <!-- https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
+        <a href="#top" class="skip" id="skipToTop" aria-label="Skip to Top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <div id="grid-container">
+            <header>
+                <!-- Navigasjons header-->
+                <nav>
+                    <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo"></a>
+                    <ul class="navbar">
+                        <!-- Navigasjonsmeny med lenker -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Portfolio</a></li>
+                        <li><a class="active" href="about.html">About</a></li>
+                        <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Banner bilde -->
+                <section id="banner-about">
+                    <img src="img/banner.jpeg" alt="">
+                    <div class="overlay-about">
+                        <p>Company name</p>
+                        <h1>About our company</h1>
+                        <h2>Int sel seger in felis quis dui hendrerit blandit. Praui at ndo. Mauris li in blandt sulescipit. Praesent nisi eros.<br> Duis sem mauris, porta ut viverra ut, imperdiet eget sjdjso oskds kedsodjosjj okej sik loks seje kel soi la inti lod scelerisque elit elementum, fermentum purus nec, maximus nibh. Integer nec fermentum odio. Phasellus egestas, ipsum quis elementum euismod, ipsum velit suscipit sem, ac euismod libero dui id enim. Curabiturlibero, pretium et diam mollis dj,Integer rhoncus ac justo sit. </h2>
+                        <a href="about.html#contact-us" class="touch-btn">Get in touch with us</a>
+                    </div>
+                </section>     
+            </header>
+            <main id="main">
+                <!-- Seksjon om services-->
+                <section id="services">
+                    <h2>Our services</h2>
+                    <article>
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-code fa-xl"></i>
+                        <h3>Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>
+                </section>
+                <!-- Seksjon om clients-->
+                <section id="clients">
+                    <h2>Some of our clients</h2>
+                    <article>
+                        <img src="img/logo1.png" alt="Product 1">
+                    </article>
+                    <article>
+                        <img src="img/logo2.png" alt="Product 1">
+                    </article>
+                    <article>
+                        <img src="img/logo3.png" alt="Product 1">
+                    </article>
+                </section>
+                <!-- Kontakt oss form -->
+                <section id="contact-us">
+                    <h2>Contact us</h2>
+                    <div class="contact-container">
+                        <form action="#" method="get" id="form">
+                            <h3>Send us a message</h3>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Ola Normann.." required>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Branding.." required>
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" name="message" required></textarea>
+                            <button type="submit">Send message</button>
+                        </form>
+                        <!-- sekjson med kontatinfo-->
+                        <section id="contact-information">
+                            <h3>Contact information</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit ipsum, imperdiet nec gravida vel, suscipit nec nulla. Morbi consequat et eros vel tincidunt. </p>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>B R A Veien 4, 1757 Halden</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>69 60 80 00</span>
+                                </li>
+                                <li>
+                                    <a href="mailto:postmottak@hiof.no">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>postmottak@hiof.no</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>    
+                <!-- Ekte kart -->
+                <!-- Kilde til kart: https://blog.hubspot.com/website/how-to-embed-google-map-in-html -->      
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433809!2d11.350228377023122!3d59.12925022702023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701094832640!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>               </div>
+            </main>
+            <footer>           
+                <section>
+                    <!-- Footer logo -->
+                    <a href="index.html" id="logoo" title="logo"><img src="img/logo1.png" alt="Logoo"></a>
+                   <p>Companyrights Companyname 2023</p>
+                    <!-- Likning til sosaile medier, med ikoner-->
+                    <ul class="social-media-icons">
+                        <li><a href="https://www.facebook.com/" aria-label="Følg oss på Facebook" ><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/" aria-label="Følg oss på Instgram" ><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" aria-label="Følg oss på LinkedIn" ><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    </body>
+ </html>
+    

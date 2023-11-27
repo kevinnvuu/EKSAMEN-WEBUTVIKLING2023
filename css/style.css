@@ -1,19 +1,18 @@
-/* Setter standard skrifttype for hele nettstedet */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+/* Setter font type, og max width for hele nettstedet */
 body {
-    font-family:'Mulish', Arial, Helvetica, sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 1600px;
 }
 
-/* Definerer et grid-container som inneholder header, main og footer */
+
+/* grid-container som inneholder header, main og footer */
 #grid-container {
     display: grid;
     grid-template-areas: "header" "main" "footer";
 }
-
-/* Legger til litt padding  for mellomrom */
-/* header, main, footer {
-    padding: 0;
-} */
 
 
 /* Styler header-seksjonen */
@@ -23,28 +22,29 @@ header {
 
 }
 
+/* Styler logo */
 #logo img, #logoo img {
-    width: 120px; /* Endre verdien etter behov */
-    height: auto; /* Sørg for at høyden justeres proporsjonalt */
+    width: 120px;
+    height: auto; 
 }
 
 /* Gjør navigasjonselementene i header til flexbokser som er justert mellomrom og til høyre */
 header nav {
     display: flex;
-    flex-direction: column; /* Endrer retningen til kolonne når skjermen blir smalere */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
     padding: 1rem;
 
 }
 
+/* Styler navigasjonsmenyen */
 .navbar {
-    list-style: none; /* Fjerner punktlistestilen */
-    padding: 0; /* Fjerner standard padding på listen */
+    list-style: none; 
+    padding: 0; 
     
 }
 
-/* Øker mellomrommet mellom navigasjonselementene */
 .navbar li {
     margin-bottom: 1rem;
 }
@@ -55,13 +55,7 @@ header nav {
 }
 
 
-/* .banner h1 {
-    font-size: 30px;
-    margin-bottom: 1px;
-    align-items: center;
-
-} */
-
+/* Styler kontakt-knappen */
 .contact-btn {
     text-decoration: none;
     background-color: #e6bd43;
@@ -71,12 +65,13 @@ header nav {
 
 }
 
+/* Styler hover-effekter på knapper */
 .contact-btn:hover, .banner-btn:hover, #newsletter .sign-btn:hover, .touch-btn:hover, button:hover{
     background-color: #252525;
     color: #e6bd43;
 }
 
-
+/* Styler banner  */
 #banner-index, #banner-products, #banner-about {
     position: relative;
     text-align: center;
@@ -86,6 +81,7 @@ header nav {
     object-fit: cover;
 }
 
+/* Styler overlay for bannerbildene*/
 #banner-index .overlay-index, #banner-products .overlay-products {
     position: absolute;
     width: 100%;
@@ -97,9 +93,9 @@ header nav {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.6);
-    text-align: center;
 }
 
+/* Styler banner video */
 #myVideo {
     width: 100%;
     height: 600px;
@@ -107,18 +103,21 @@ header nav {
     object-fit: cover; 
     
 }
+
 .video-container {
     overflow: hidden;
 }
 
-
+/* Styler banner bilde på index */
 #banner-image {
-    object-fit: cover;
     display: none;
+    object-fit: cover;
     width: 100%;
-    height: 500px;
+    height: 600px;
+    
 }
 
+/* Styler banneroverskrifter og knapper på index */
 #banner-index h1 {
     font-size: 50px;
     margin: 0;
@@ -132,115 +131,36 @@ header nav {
 }
   
 .banner-btn {
-    padding: 12px 24px;
-    font-size: 16px;
-    display: inline-block;
     padding: 10px 10px;
+    display: inline-block;
     font-size: 20px;
     text-decoration: none;
     background-color: #e6bd43;
     color: #000;
     font-weight: bold;
+    
 }
 
 
 
-#banner-about .overlay-about {
-    position: absolute;
-    width: 47%;
-    height: 70%;
-    top: 50%;
-    left: 73%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 20px;
-}
-
-#banner-about .overlay-about h1 {
-    font-size: 20px;
-}
-
-#banner-about .overlay-about h2, #banner-about .overlay-about p {
-    font-size: 13px;
-    text-align: left;
-    font-weight: lighter;
-    margin: 5px 0; /* Reduserer topp- og bunnpadding for h2 og p */
-}
-
-
-
-.touch-btn, button{
-    text-decoration: none;
-    background-color: #e6bd43;
-    font-weight: bold;
-    color: black;
-    padding: 0.5rem;
-    font-size: 15px;
-    margin-top: 10px; /* Reduserer topp- og bunnpadding for h2 og p */
-    border: none;
-
-
-}
-
-
-@media only screen and (max-width: 768px) {
-    #banner-about .overlay-about {
-        position: absolute;
-        width: 75%;
-        height: 70%;
-        top: 50%;
-        left: 50%;
-    }
-
-
-    #myVideo {
-        display: none;
-    }
-
-    #banner-image {
-        display: block;
-    }
-
-    .explore-btn {
-        margin-right: 5px; /* Reduser marginen for mindre skjermer */
-        margin-left: 5px; /* Reduser marginen til venstre for mindre skjermer */
-        margin-bottom: 20px;
-    }
-
-    #engaging, #newsletter h2, #banner-index p {
-        padding: 0 30px;
-    }
-
-
-  
-  
-}
-
-
-/* Styler read more about us knapp */
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_outline_buttons */
+/* Styler read more about us knapp på index */
 .read-more-btn {
     border: 2px solid #000;
     background-color:#e6bd43;
     color:#000;
     padding: 15px 12px;
     font-size: 16px;
-    cursor: pointer;
     text-decoration: none;
     border-color: #000;
     font-weight: bold;
-  }
+}
 
-/* når man hovrer over knappen */
+/*styler hovre effekt */
 .read-more-btn:hover, .explore-btn:hover{
     background-color: #252525;
     color:#e6bd43;
     font-weight: bold;
-  }
+}
   
 
 #engaging{
@@ -249,19 +169,20 @@ header nav {
     margin-bottom: 60px;
     margin-top: 60px;
 }
+
 /* Styler main-seksjonen i gridet */
 main {
     grid-area: main;
 }
 
-/* Setter bredden til bilder inni main-seksjonen til 100% */
+/* Setter bredden til bilder inni main-seksjonen til 100%
 main section img {
     width: 100%;
-}
+} */
 
 
 
-/* Styler tjeneste-seksjonen med flexbokser og bakgrunnsfarge */
+/* Styler services -seksjonen  */
 #services {
     display: flex;
     flex-direction: row;
@@ -288,38 +209,35 @@ main section img {
     min-width: 200px;
 }
 
-/* Juster font-awesome-ikonstørrelsen ved behov */
-.fa-solid {
-    font-size: 2em;
-}
 
-
-/* Gjør flex-seksjoner som viser bilder og tekst ved siden av hverandre med mellomrom */
+/* styler flex-section med bilde og tekst*/
 .flex-section {
     display: flex;
-    flex-direction: column; /* Endre til kolonne på mindre skjermer */
+    flex-direction: column; 
     background-color: #e6bd43;
     padding: 3rem;
     align-items: center;
 }
 
-/* Reduserer bildenes bredde til 100% i flex-seksjoner for mobilvisning */
 .flex-section img {
-    height: auto; /* Beholder bildets høyde proporsjonal med bredden */
-    max-width: 400px; /* Setter en maksimal bredde for bildet */
+    height: auto; 
+    max-width: 400px; 
+    width: 100%; 
+
 }
 
 .flex-section section {
     padding: 1rem;
-    width: 100%; /* Fyller forelderens bredde for mobilvisning */
-    margin-top: 1rem; /* Gir litt mellomrom over teksten */
+    width: 100%; 
+    margin-top: 1rem; 
 }
 
 .flex-section section p {
     margin-bottom: 40px; 
 }
 
-/* sekjson for sign me up knapp */
+
+/* styler newsletter seksjon */
 #newsletter{
     display: flex;
     flex-direction: column;
@@ -344,6 +262,7 @@ main section img {
 
 }
 
+/* styler knapp*/
 #newsletter .sign-btn {
     background-color: #e6bd43;
     font-weight: bold;
@@ -365,9 +284,9 @@ footer {
 /* Stil for footer seksjon */
 footer section {
     display: flex;
-    flex-direction: column; /* Default: Kolonne på mindre skjermer */
-    align-items: center; /* Sentrerer elementene horisontalt på mindre skjermer */
-    justify-content: center; /* Sentrerer elementene vertikalt på mindre skjermer */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 /* Stil for sosiale medie-ikoner */
@@ -388,15 +307,36 @@ footer section {
 
 
 
-/* PRODUCS/ PORTFOLIO SIDE */
-
-
+/* styler explore sekjon på products siden */
 #explore{
     display: flex;
     flex-wrap: wrap;
 }
 
-/* styler banner på produkt siden og about siden */
+/* Styler for knappene på products side */
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: black; 
+    border: 2px solid black; 
+    background-color: white; 
+    margin-left: 20px; 
+
+}
+
+/* styler strek på products siden */
+hr {
+    border: none;
+    height: 3px;
+    background-color: #e6bd43;
+    margin: 20px 0;
+    width: 100%;
+    margin-inline: 20px
+
+}
+
+/* styler banner bilde på products siden og about siden */
 #banner-products  img, #banner-about  img {
     display: block;
     object-fit: cover;
@@ -404,8 +344,10 @@ footer section {
     height: 100%;
 }
 
+
 /* styler skriften på banner på produtksiden */
 #banner-products h1 {
+    font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -414,7 +356,7 @@ footer section {
     transform: translate(-50%, -50%);
 }
 
-
+/* styler branding, design, development */
 .branding, .design, .development {
     display: flex;
     flex-wrap: wrap;
@@ -434,33 +376,21 @@ footer section {
 
 }
 
+/* stil som gjør at artikelkortene vokser */
 .branding article img:hover,.design article img:hover,.development article img:hover {
-    transform: scale(1.05); /* Øk størrelsen til 110% når du svever over bildet */
-    transition: transform 0.5s ease; /* Legg til en overgangseffekt for en jevn animasjon */
+    transform: scale(1.05); 
+    transition: transform 0.6s ease; 
 }
 
-.branding article h2, .design article h2, .development article h2{
+/* .branding article h2, .design article h2, .development article h2{
     font-weight: bold;
 
-}
-
-hr {
-    border: none;
-    height: 3px;
-    background-color: #e6bd43;
-    margin: 20px 0;
-    width: 100%;
-    margin-inline: 20px
-   
-
-}
+} */
 
 .branding h2, .design h2, .development h2, #explore h2{
     position: flex;
     margin-inline: 20px;
 }
-
-
 
 .branding, .design, .development {
     justify-content: initial;
@@ -468,36 +398,56 @@ hr {
 }
 
 
-/* Stil for knappene på portfolio side */
-.explore-btn {
-    display: inline-block;
-    padding: 10px 20px; /* Juster padding etter behov */
-    text-decoration: none;
-    color: black; /* Farge på teksten */
-    border: 2px solid black; /* Svart kantlinje */
-    background-color: white; /* Hvit bakgrunn */ 
-    margin-left: 20px; 
+/* Styler overlay for about side */
+#banner-about .overlay-about {
+    position: absolute;
+    width: 47%;
+    height: 70%;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+}
 
+#banner-about .overlay-about h1 {
+    font-size: 20px;
+}
+
+#banner-about .overlay-about h2, #banner-about .overlay-about p {
+    font-size: 13px;
+    text-align: left;
+    font-weight: lighter;
+    margin: 5px 0; 
 }
 
 
+/* Styler knapper på about side */
+.touch-btn, button{
+    text-decoration: none;
+    background-color: #e6bd43;
+    font-weight: bold;
+    color: black;
+    padding: 0.7rem;
+    font-size: 15px;
+    margin-top: 10px; 
+    border: none;
 
+}
 
-/* ABOUT US SIDE */
-
-
-
-
-
-
+/* styler clients seksjon på about side*/
 #clients {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #e6bd43;
-    justify-content: center; /* Sentrer elementene horisontalt */
-    align-items: center; /* Sentrer elementene vertikalt */
-    padding: 30px; /* Legg til ekstra padding for å utvide bakgrunnen */
+    justify-content: center; 
+    align-items: center; 
+    padding: 30px; 
 
 }
 
@@ -508,32 +458,34 @@ hr {
 }
 
 #clients article {
-    /* max-width: 100px;
-    width: 80%;
-    min-width: 100px; */
     margin: 20px;
 }
 
 #clients article img {
-    width: 150px; /* eller en annen absolutt verdi */
+    width: 150px; 
     height: 300px; 
     height: auto;
     align-items: center;
     text-align: center;
 }
 
+/* styler ikon*/
 .fa-solid {
+    font-size: 30px;
+}
+
+/* styler ikon på kontaktinfo seksjon */
+#contact-information .fa-solid {
     font-size: 20px;
 }
 
-
-
+/* styler contact us seksjon på about side*/
 #contact-us {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f6f3f3;
-    padding: 20px;
+    padding: 40px;
 }
 
 #contact-us h2 {
@@ -548,13 +500,13 @@ hr {
     flex-direction: column;
     gap: 50px;
     width: 100%;
-    max-width: 900px; /* Endre denne verdien etter behov */
-    margin: 0 auto; /* Sentrerer elementene i midten */
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
-#form,
-#contact-information {
-    max-width: 100%; /* Full bredde på mindre skjermer */
+/* styler form og contact-information */
+#form, #contact-information {
+    max-width: 100%; 
 }
 
 label {
@@ -562,8 +514,8 @@ label {
     margin-bottom: 5px;
 }
 
-#form input,
-#form textarea {
+/* styler form  */
+#form input,#form textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -582,82 +534,15 @@ label {
 }
 
 #contact-information i {
-    margin-right: 5px;
+    margin-right: 15px;
     color: #000;
 
 }
 
-
-@media (min-width: 768px) {
-    .contact-container {
-        flex-direction: row;
-    }
-
-    #form, #contact-information {
-        flex: 1; 
-    }
-
-}
-
-
-/* Mediestørrelsesregel for skjermer som er bredere enn 600px */
-@media only screen and (min-width: 600px) {
-    /* Endrer grid-malen for bredere skjermer */
-    #grid-container {
-        grid-template-areas: "header header header" "main main main" "footer footer footer";
-    }
-
-    /* Gjenoppretter den opprinnelige flex-retningen for større skjermer */
-    header nav {
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
-
-    /* Viser den skjulte navigasjonsmenyen og skjuler menyikoner */
-    .navbar {
-        display: flex;
-        gap: 1rem;
-        list-style: none;
-        margin: 0;
-
-    }
-    .flex-section {
-        flex-direction: row; /* Endre tilbake til rad for større skjermer */
-    }
-
-    .flex-section section {
-        width: 40%; /* Juster bredden etter behov */
-        margin-top: 0; /* Fjerner toppmargen for større skjermer */
-    }
-
-    /* Tilpasser også footer section for større skjermer */
-    footer section {
-        flex-direction: row;
-        justify-content: space-between; /* Legg til for å beholde plassering på større skjermer */
-        align-items: center; /* Sentrerer vertikalt */
-    }
-
-    /* Justerer plasseringen av sosiale medie-ikoner på større skjermer */
-    .social-media-icons {
-        align-items: center;
-        justify-content: center; /* Sentrerer ikonene horisontalt på mindre skjermer */
-        padding: 0; /* Fjerner all padding på mindre skjermer */
-    }
-
-  
-
-   
-
-}
-
-
-
-
-
+/* styler kart */
 .google-map {
-    width: 100%; /* Juster bredden etter behov */
-    height: 250px; /* Juster høyden etter behov */
+    width: 100%; 
+    height: 250px; 
 }
 
 .google-map iframe {
@@ -665,7 +550,7 @@ label {
     height: 100%;
 }
 
-
+/* styler skip to top knapp */
 .skip {
     position: fixed;
     bottom: 25px;
@@ -678,8 +563,140 @@ label {
     padding: 15px;
 }
 
-
+/* stil for menyknappene  */
 .active {
     border-bottom: 3px solid #e6bd43;
     font-weight: 900;
 }
+
+
+
+/* Mediestørrelsesregel for skjermer som er bredere enn 600px */
+@media only screen and (min-width: 600px) {
+
+    /* Endrer grid-malen for bredere skjermer */
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    /* navigasjonsmenyen for bredere skjermer */
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    /* Justerer utseendet på flex-seksjoner for bredere skjermer */
+    .navbar {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+
+    }
+
+    .flex-section {
+        flex-direction: row; 
+    }
+
+    .flex-section section {
+        width: 60%; 
+        margin-top: 0; 
+    }
+
+    /* Justerer footer-seksjonen for bredere skjermer */
+    footer section {
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+    .social-media-icons {
+        align-items: center;
+        justify-content: center; 
+        padding: 0; 
+    }
+
+    .contact-container {
+        flex-direction: row;
+    }
+
+     /* form og contact-information for bredere skjermer */
+    #form, #contact-information {
+        flex: 1; 
+    } 
+
+}
+
+/* Mediestørrelsesregel for skjermer som er smalere enn 768px */
+@media only screen and (max-width: 768px) {
+
+    /* overlay-stilen for banneren på about siden for mindre skjermer */
+    #banner-about .overlay-about {
+        position: absolute;
+        width: 75%;
+        height: 70%;
+        top: 50%;
+        left: 50%;
+    }
+
+    /* Skjuler videoen på mindre skjermer på index */
+    #myVideo {
+        display: none;
+    }
+
+    /* Viser bannerbildet på index på mindre skjermer */
+    #banner-image {
+        display: block;
+    
+    }
+
+    /* stilene for Explore knappene  */
+    .explore-btn {
+        margin-right: 5px; 
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* setter litt mer padding  */
+    #engaging, #newsletter h2, #banner-index p, #banner-index h1 {
+        padding: 0 30px;
+    }
+
+    .flex-section {
+        flex-direction: column; 
+    }
+
+   
+  
+}
+
+/* Mediestørrelsesregel for skjermer som er smalere enn 405px */
+@media only screen and (max-width: 405px) {
+
+    /* Justerer banner-aboutog overlay for enda mindre skjermer */
+   #banner-about {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        padding: 0;
+        height: 500px;
+        object-fit: cover;
+    }
+    
+    #banner-about .overlay-about {
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+    }
+
+    .banner-btn {
+        padding: 8px 16px; 
+        font-size: 15px;
+    }
+
+}
+
+
