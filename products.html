@@ -34,14 +34,14 @@
                     <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo"></a>
                     <ul class="navbar">
                         <li><a href="index.html">Home</a></li>
-                        <li><a class="active" href="index.html" title="Home" aria-current="page">Home</a></li>
+                        <li><a class="active" href="products.html">Products</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
                     </ul>
                 </nav>           
                  <!-- Banner bilde -->
-                <section id="banner-products">
-                    <img src="img/banner.jpeg" alt="banner bilde">
+                 <section id="banner-products" role="banner">
+                    <img src="img/banner.jpeg" alt="bannerbilde">
                     <div class="overlay-products"></div>
                     <h1>Portfolio</h1>
                 </section>
@@ -107,15 +107,15 @@
                 </section>
             </main>
             <footer>           
-                <section>
+                <section itemscope itemtype="http://schema.org/Organization">
                     <!-- Footer logo -->
-                    <a href="index.html" id="logoo" title="logo"><img src="img/logo1.png" alt="Logoo"></a>
-                   <p>Companyrights Companyname 2023</p>
+                    <a href="index.html" id="logoo" title="logo"><img itemprop="logo" src="img/logo1.png" alt="Logoo"></a>
+                    <p itemprop="name">Companyrights Companyname 2023</p>
                     <!-- Likning til sosaile medier, med ikoner-->
-                    <ul class="social-media-icons">
-                        <li><a href="https://www.facebook.com/" aria-label="Følg oss på Facebook" ><i class="fa-brands fa-square-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/" aria-label="Følg oss på Instgram" ><i class="fa-brands fa-square-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/" aria-label="Følg oss på LinkedIn" ><i class="fa-brands fa-linkedin"></i></a></li>
+                    <ul class="social-media-icons" itemprop="sameAs">
+                        <li><a href="https://www.facebook.com/" aria-label="Følg oss på Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/" aria-label="Følg oss på Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" aria-label="Følg oss på LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </section>
             </footer>

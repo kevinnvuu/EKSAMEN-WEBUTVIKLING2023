@@ -65,8 +65,8 @@ header nav {
 
 }
 
-/* Styler hover-effekter på knapper */
-.contact-btn:hover, .banner-btn:hover, #newsletter .sign-btn:hover, .touch-btn:hover, button:hover{
+/* Styler hovre-effekter på knapper */
+.contact-btn:hover, .banner-btn:hover, #newsletter .sign-btn:hover, .touch-btn:hover, button:hover, .read-more-btn:hover, .explore-btn:hover{
     background-color: #252525;
     color: #e6bd43;
 }
@@ -84,12 +84,12 @@ header nav {
 /* Styler overlay for bannerbildene*/
 #banner-index .overlay-index, #banner-products .overlay-products {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.6);
@@ -98,7 +98,7 @@ header nav {
 /* Styler banner video */
 #myVideo {
     width: 100%;
-    height: 600px;
+    height: 400px;
     display: block;
     object-fit: cover; 
     
@@ -113,7 +113,7 @@ header nav {
     display: none;
     object-fit: cover;
     width: 100%;
-    height: 600px;
+    height: 400px;
     
 }
 
@@ -156,11 +156,11 @@ header nav {
 }
 
 /*styler hovre effekt */
-.read-more-btn:hover, .explore-btn:hover{
+/* .read-more-btn:hover, .explore-btn:hover{
     background-color: #252525;
     color:#e6bd43;
     font-weight: bold;
-}
+} */
   
 
 #engaging{
@@ -199,7 +199,7 @@ main section img {
 #services h2 {
     width: 100%;
     text-align: center;
-    font-size: 2em;
+    font-size: 30px;
 
 }
 
@@ -229,7 +229,7 @@ main section img {
 .flex-section section {
     padding: 1rem;
     width: 100%; 
-    margin-top: 1rem; 
+    /* margin-top: 10px;  */
 }
 
 .flex-section section p {
@@ -377,7 +377,7 @@ hr {
 }
 
 /* stil som gjør at artikelkortene vokser */
-.branding article img:hover,.design article img:hover,.development article img:hover {
+.branding article:hover, .design article:hover, .development article :hover {
     transform: scale(1.05); 
     transition: transform 0.6s ease; 
 }
@@ -388,7 +388,6 @@ hr {
 } */
 
 .branding h2, .design h2, .development h2, #explore h2{
-    position: flex;
     margin-inline: 20px;
 }
 
@@ -632,10 +631,19 @@ label {
 @media only screen and (max-width: 768px) {
 
     /* overlay-stilen for banneren på about siden for mindre skjermer */
+    #banner-about {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        padding: 0;
+        height: 500px;
+        object-fit: cover;
+    }
+    
     #banner-about .overlay-about {
         position: absolute;
-        width: 75%;
-        height: 70%;
+        width: 70%;
+        height: 80%;
         top: 50%;
         left: 50%;
     }
@@ -667,34 +675,39 @@ label {
         flex-direction: column; 
     }
 
-   
+    /* gjør hovre-efekter/ klikke-effekter på knapper på mindre skjermer, til original fargen */
+    .contact-btn:hover, .banner-btn:hover, #newsletter .sign-btn:hover, .touch-btn:hover, button:hover, .read-more-btn:hover, .explore-btn:hover{
+        background-color:  #e6bd43;
+        color:#000;
+    }
+
+  .read-more-btn:hover, .explore-btn:hover{
+        background-color: initial;
+        color:#000;
+    }   
   
 }
 
-/* Mediestørrelsesregel for skjermer som er smalere enn 405px */
-@media only screen and (max-width: 405px) {
-
-    /* Justerer banner-aboutog overlay for enda mindre skjermer */
-   #banner-about {
-        position: relative;
-        text-align: center;
-        overflow: hidden;
-        padding: 0;
-        height: 500px;
-        object-fit: cover;
+/* Tar vekk hovrer på artikkekortene, kilde: https://www.w3.org/TR/mediaqueries-4/#hover */
+@media (hover: none) {
+    .branding article:hover,  .design article:hover, .development article:hover {
+        transform: none; 
+        transition: none; 
     }
-    
-    #banner-about .overlay-about {
-        position: absolute;
-        width: 70%;
-        height: 80%;
-        top: 50%;
-        left: 50%;
-    }
+}
 
+/* Mediestørrelsesregel for skjermer som er smalere enn 500px */
+@media only screen and (max-width: 300px) {
+
+    /* Justerer bannerknapp og newsletterfelt for enda mindre skjermer */
     .banner-btn {
         padding: 8px 16px; 
         font-size: 15px;
+    }
+
+    #newsletter article input{
+        margin: 5px;
+
     }
 
 }

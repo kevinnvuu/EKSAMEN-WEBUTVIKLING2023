@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="img/logo1.png">
-        <title>Welcome Page - The company </title>
+        <title>Welcome Page - The company - Everything from design to support</title>
     </head>
     <body>
         <!-- Skip to Top top knapp -->
@@ -34,21 +34,21 @@
                 <nav>
                     <a href="index.html" id="logo" title="logo"><img src="img/logo1.png" alt="Logo"></a>
                     <ul class="navbar">
-                        <li><a class="active" href="index.html" title="Home" aria-label="Home">Home</a></li>
-                        <li><a href="products.html" title="Portfolio" aria-label="Portfolio">Portfolio</a></li>
-                        <li><a href="about.html" title="About" aria-label="About">About</a></li>
-                        <li><a href="about.html#contact-us" class="contact-btn" title="Contact" aria-label="Contact">Contact</a></li>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="products.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#contact-us" class="contact-btn">Contact</a></li>
                     </ul>
                 </nav>
                  <!-- Banner seksjon med video bakgrunn -->
                  <!-- Kilde til hvordan legge til video: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
-                <section id="banner-index" role="banner">
+                 <section id="banner-index" role="banner">
                     <div class="video-container">
                         <video autoplay muted loop id="myVideo">
                             <source src="img/mountains.mp4" type="video/mp4">
                         </video>
                         <!-- Banner bilde for mindre skjermer-->
-                        <img src="img/banner.jpeg" alt="Banner image" id="banner-image">
+                        <img src="img/banner.jpeg" alt="bannerbilde" id="banner-image">
                         <div class="overlay-index">
                             <h1>Compeling headline</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum justo ante, pretium at mi nec, viverra pellentesque magna.<br> Vestibulum daPhasellus vestibulum nibh in leo fermentum rutrum.</p>
@@ -98,24 +98,33 @@
                     </article>
                 </section>
                  <!-- Seksjon for nyhetsbrev -->
-                <section id="newsletter">
+                <!-- <section id="newsletter" itemscope itemtype="http://schema.org/SubscribeAction">
                     <h2>Sign up for our newsletter</h2>
+                    <link itemprop="target" href="subscribe.php">
                     <article>
                         <input type="email" placeholder="Nora@epost.no" id="newsletter-email" aria-label="Email address for newsletter">
                         <input type="submit" value="Sign me up!" class="sign-btn" title="Sign up for newsletter">
                     </article>
-                </section>
+                </section>    -->    
+                <section id="newsletter">
+                    <h2>Sign up for our newsletter</h2>
+                    <article>
+                        <label for="newsletter-email"></label>
+                        <input type="email" placeholder="Nora@epost.no" id="newsletter-email">
+                        <input type="submit" value="Sign me up!" class="sign-btn">
+                    </article>
+                </section>                                  
             </main>
             <footer>           
-                <section>
+                <section itemscope itemtype="http://schema.org/Organization">
                     <!-- Footer logo -->
-                    <a href="index.html" id="logoo" title="logo"><img src="img/logo1.png" alt="Logoo"></a>
-                   <p>Companyrights Companyname 2023</p>
+                    <a href="index.html" id="logoo" title="logo"><img itemprop="logo" src="img/logo1.png" alt="Logoo"></a>
+                    <p itemprop="name">Companyrights Companyname 2023</p>
                     <!-- Likning til sosaile medier, med ikoner-->
-                    <ul class="social-media-icons">
-                        <li><a href="https://www.facebook.com/" aria-label="Følg oss på Facebook" ><i class="fa-brands fa-square-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/" aria-label="Følg oss på Instgram" ><i class="fa-brands fa-square-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/" aria-label="Følg oss på LinkedIn" ><i class="fa-brands fa-linkedin"></i></a></li>
+                    <ul class="social-media-icons" itemprop="sameAs">
+                        <li><a href="https://www.facebook.com/" aria-label="Følg oss på Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/" aria-label="Følg oss på Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" aria-label="Følg oss på LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </section>
             </footer>
