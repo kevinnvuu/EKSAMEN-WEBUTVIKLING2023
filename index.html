@@ -74,38 +74,38 @@
                     </section>    
                 </section>
                  <!-- Seksjon om services, med ikoner -->
-                <section id="services">
+                <section id="services" itemscope itemtype="http://schema.org/Service">
                     <h2>Our services</h2>
-                    <article>
-                        <i class="fa-solid fa-users" aria-hidden="true"></i>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    <article itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                        <i class="fa-solid fa-users"></i>
+                        <h3 itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name">Branding</span>
+                        </h3>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>               
+                    <article itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3 itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name">Design</span>
+                        </h3>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>                
+                    <article itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                        <i class="fa-solid fa-code fa-xl"></i>
+                        <h3 itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name">Development</span>
+                        </h3>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </article>               
+                    <article itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3 itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name">Support</span>
+                        </h3>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                     </article>
-                    <article>
-                        <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
-                        <h3>Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    </article>
-                    <article>
-                        <i class="fa-solid fa-code fa-xl" aria-hidden="true"></i>
-                        <h3>Development</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    </article>
-                    <article>
-                        <i class="fa-solid fa-wifi" aria-hidden="true"></i>
-                        <h3>Support</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    </article>
-                </section>
-                 <!-- Seksjon for nyhetsbrev -->
-                <!-- <section id="newsletter" itemscope itemtype="http://schema.org/SubscribeAction">
-                    <h2>Sign up for our newsletter</h2>
-                    <link itemprop="target" href="subscribe.php">
-                    <article>
-                        <input type="email" placeholder="Nora@epost.no" id="newsletter-email" aria-label="Email address for newsletter">
-                        <input type="submit" value="Sign me up!" class="sign-btn" title="Sign up for newsletter">
-                    </article>
-                </section>    -->    
+                </section>      
+                 <!-- Seksjon for nyhetsbrev -->             
                 <section id="newsletter">
                     <h2>Sign up for our newsletter</h2>
                     <article>
@@ -115,7 +115,8 @@
                     </article>
                 </section>                                  
             </main>
-            <footer>           
+            <footer>
+                <!-- Kommer ikke tydelig fram hva salgs bedrift eller organisasjon nettsetdet er, derfor har jeg brukt organization  -->
                 <section itemscope itemtype="http://schema.org/Organization">
                     <!-- Footer logo -->
                     <a href="index.html" id="logoo" title="logo"><img itemprop="logo" src="img/logo1.png" alt="Logoo"></a>

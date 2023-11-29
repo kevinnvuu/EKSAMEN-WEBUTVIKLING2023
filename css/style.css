@@ -175,13 +175,6 @@ main {
     grid-area: main;
 }
 
-/* Setter bredden til bilder inni main-seksjonen til 100%
-main section img {
-    width: 100%;
-} */
-
-
-
 /* Styler services -seksjonen  */
 #services {
     display: flex;
@@ -268,7 +261,6 @@ main section img {
     font-weight: bold;
     color: black;
 }
-
 
 /* Footer-styling */
 footer {
@@ -382,10 +374,6 @@ hr {
     transition: transform 0.6s ease; 
 }
 
-/* .branding article h2, .design article h2, .development article h2{
-    font-weight: bold;
-
-} */
 
 .branding h2, .design h2, .development h2, #explore h2{
     margin-inline: 20px;
@@ -675,7 +663,7 @@ label {
         flex-direction: column; 
     }
 
-    /* gjør hovre-efekter/ klikke-effekter på knapper på mindre skjermer, til original fargen */
+    /* gjør hovre-efekter/ klikke-effekter på knapper på mindre skjermer, tilbake til standard */
     .contact-btn:hover, .banner-btn:hover, #newsletter .sign-btn:hover, .touch-btn:hover, button:hover, .read-more-btn:hover, .explore-btn:hover{
         background-color:  #e6bd43;
         color:#000;
